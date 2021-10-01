@@ -4,7 +4,7 @@ import React from "react";
 const Header = () => {
   return (
     <>
-      <Box p={15} textAlign="center">
+      <Box p={15} mt="30px" textAlign="center">
         <Heading>e-Survei🔎</Heading>
         <Text>silahkan pilih petugas yang melayani anda ...</Text>
       </Box>

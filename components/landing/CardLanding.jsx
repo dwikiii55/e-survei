@@ -6,14 +6,20 @@ import React from "react";
 
 const CardLanding = () => {
   return (
-    <Flex flexDir="column">
-      <Box mt={5} bg={useColorModeValue("gray.100", "gray.700")}>
+    <Flex alignItems="center" flexDir="column">
+      <Box
+        borderRadius="20px"
+        _hover={{ bg: "green.200" }}
+        w={"90%"}
+        mt={5}
+        bg={useColorModeValue("gray.100", "gray.700")}
+        boxShadow={"sm"}
+      >
         <Flex
           alignItems="center"
           flexDir={{ base: "row", sm: "row", md: "row", lg: "row" }}
-          boxShadow={"lg"}
         >
-          <Flex p={3}>
+          <Flex p={1}>
             <WrapItem>
               <Avatar
                 verticalAlign
@@ -26,40 +32,11 @@ const CardLanding = () => {
           <Flex justifyContent="center" flexDir={"column"}>
             <Text
               fontWeight="bold"
-              fontSize={{ base: "20px", md: "25px", lg: "30px" }}
+              fontSize={{ base: "20px", md: "25px", lg: "25px" }}
             >
               Muhammad Alfian Syah
             </Text>
-            <Text fontSize={{ base: "20px", md: "25px", lg: "30px" }}>
-              Petugas TPT
-            </Text>
-          </Flex>
-        </Flex>
-      </Box>
-      <Box mt={5} bg={useColorModeValue("gray.100", "gray.700")}>
-        <Flex
-          alignItems="center"
-          flexDir={{ base: "row", sm: "row", md: "row", lg: "row" }}
-          boxShadow={"lg"}
-        >
-          <Flex p={3}>
-            <WrapItem>
-              <Avatar
-                verticalAlign
-                size="xl"
-                name="Christian Nwamba"
-                src="https://bit.ly/code-beast"
-              />{" "}
-            </WrapItem>
-          </Flex>
-          <Flex justifyContent="center" flexDir={"column"}>
-            <Text
-              fontWeight="bold"
-              fontSize={{ base: "20px", md: "25px", lg: "30px" }}
-            >
-              Muhammad Alfian Syah
-            </Text>
-            <Text fontSize={{ base: "20px", md: "25px", lg: "30px" }}>
+            <Text fontSize={{ base: "15px", md: "20px", lg: "22px" }}>
               Petugas TPT
             </Text>
           </Flex>
