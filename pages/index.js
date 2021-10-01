@@ -1,9 +1,12 @@
 import { Heading } from "@chakra-ui/layout";
+import AppContainer from "../components/container/AppContainer";
 
 export default function Home() {
   return (
     <>
-      <Heading>OKe</Heading>
+      <AppContainer>
+        <Heading>OKE</Heading>
+      </AppContainer>
     </>
   );
 }
