@@ -19,6 +19,7 @@ import {
   useDisclosure,
   VStack,
 } from "@chakra-ui/react";
+import { useRouter } from "next/router";
 import React from "react";
 import {
   FiBell,
@@ -29,15 +30,16 @@ import {
   FiSettings,
   FiStar,
   FiTrendingUp,
+  FiUser,
 } from "react-icons/fi";
 
 //menu untuk sidebar
 const LinkItems = [
-  { name: "Home", icon: FiHome },
-  { name: "Trending", icon: FiTrendingUp },
-  { name: "Explore", icon: FiCompass },
-  { name: "Favourites", icon: FiStar },
-  { name: "Settings", icon: FiSettings },
+  { name: "Home", icon: FiHome, path: "/admin" },
+  { name: "Customer Service", icon: FiUser, path: "/admin/customer-service" },
+  // { name: "Explore", icon: FiCompass },
+  // { name: "Favourites", icon: FiStar },
+  // { name: "Settings", icon: FiSettings },
 ];
 
 export default function SideMenu({ children }) {
@@ -89,7 +91,7 @@ const SidebarContent = ({ onClose, ...rest }) => {
         <CloseButton display={{ base: "flex", md: "none" }} onClick={onClose} />
       </Flex>
       {LinkItems.map((link) => (
-        <NavItem key={link.name} icon={link.icon}>
+        <NavItem key={link.name} icon={link.icon} path={link.path}>
           {link.name}
         </NavItem>
       ))}
@@ -97,9 +99,10 @@ const SidebarContent = ({ onClose, ...rest }) => {
   );
 };
 
-const NavItem = ({ icon, children, ...rest }) => {
+const NavItem = ({ icon, children, path, ...rest }) => {
+  const router = useRouter();
   return (
-    <Link href="#" style={{ textDecoration: "none" }}>
+    <Link onClick={() => router.push(path)} style={{ textDecoration: "none" }}>
       <Flex
         align="center"
         p="4"
