@@ -18,6 +18,7 @@ import {
   useColorModeValue,
   useDisclosure,
   VStack,
+  Button,
 } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import React from "react";
@@ -43,6 +44,7 @@ const LinkItems = [
 ];
 
 export default function SideMenu({ children }) {
+  const router = useRouter();
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <Box minH="100vh" bg={useColorModeValue("#F1F6F9", "gray.900")}>
