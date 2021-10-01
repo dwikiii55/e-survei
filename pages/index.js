@@ -1,6 +1,6 @@
-import { Heading } from "@chakra-ui/layout";
+import { Divider, Heading } from "@chakra-ui/layout";
 import AppContainer from "../components/landing/AppContainer";
-import CardLanding from "../components/landing/CardLanding";
+import CardCs from "../components/landing/CardCs";
 
 import Header from "../components/landing/Header";
 
@@ -9,7 +9,8 @@ export default function Home() {
     <>
       <AppContainer>
         <Header />
-        <CardLanding />
+        <Divider orientation="horizontal" />
+        <CardCs />
       </AppContainer>
     </>
   );
