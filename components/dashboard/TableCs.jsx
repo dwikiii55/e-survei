@@ -9,6 +9,7 @@ import {
   Tooltip,
   HStack,
 } from "@chakra-ui/react";
+import { useRouter } from "next/router";
 import React from "react";
 import { FiEdit, FiEye, FiTrash } from "react-icons/fi";
 
@@ -51,6 +52,7 @@ const Cs = [
 ];
 
 const AksiMenu = ({ id }) => {
+  const router = useRouter();
   return (
     <>
       <HStack spacing={1}>
@@ -66,15 +68,15 @@ const AksiMenu = ({ id }) => {
           <IconButton
             size="sm"
             icon={<FiEye />}
-            variant="link"
+            onClick={() => router.push(`/admin/customer-service/${id}`)}
             variant="solid"
           />
         </Tooltip>
-        <Tooltip label="Detail Data" hasArrow bg="#394867" p={2}>
+        <Tooltip label="Edit Data" hasArrow bg="#394867" p={2}>
           <IconButton
             size="sm"
             icon={<FiEdit />}
-            variant="link"
+            onClick={() => router.push(`/admin/customer-service/${id}`)}
             variant="solid"
           />
         </Tooltip>

@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
-import CardContainer from "../../components/container/CardContainer";
-import TableCs from "../../components/dashboard/TableCs";
-import SideMenu from "../../components/layout/dashboard/SideMenu";
+import CardContainer from "../../../components/container/CardContainer";
+import TableCs from "../../../components/dashboard/TableCs";
+import SideMenu from "../../../components/layout/dashboard/SideMenu";
 import {
   Drawer,
   DrawerBody,
@@ -15,8 +15,9 @@ import {
   Box,
   Flex,
 } from "@chakra-ui/react";
-import TambahCs from "../../components/layout/dashboard/TambahCs";
-import { FiPlus } from "react-icons/fi";
+import TambahCs from "../../../components/layout/dashboard/TambahCs";
+import { FiPlus, FiUser } from "react-icons/fi";
+import TitleDasboardPage from "../../../components/ui/TitleDasboardPage";
 
 const CustomerService = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -24,6 +25,7 @@ const CustomerService = () => {
   return (
     <div>
       <SideMenu>
+        <TitleDasboardPage title="Customer Service" icon={<FiUser />} />
         <CardContainer>
           <Button
             bg="#14274E"
