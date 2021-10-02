@@ -4,9 +4,9 @@ import { Image } from "@chakra-ui/image";
 import { Box, Center, Divider, Flex, Text, WrapItem } from "@chakra-ui/layout";
 import React from "react";
 const dataDummy = [
-  { nama: "alfian ", label: "petugas TPT" },
-  { nama: "dwiki  ", label: "petugas PPATK" },
-  { nama: "widhan ", label: "petugas DJP" },
+  { nama: "alfian ", jenis: " TPT" },
+  { nama: "dwiki  ", jenis: " PPATK" },
+  { nama: "widhan ", jenis: " DJP" },
 ];
 const CardCs = () => {
   return (
@@ -51,7 +51,7 @@ const CardCs = () => {
                   {data.nama}
                 </Text>
                 <Text fontSize={{ base: "15px", md: "20px", lg: "20px" }}>
-                  {data.label}
+                  {`petugas ${data.jenis}`}
                 </Text>
               </Flex>
             </Flex>
