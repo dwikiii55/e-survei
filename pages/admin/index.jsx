@@ -1,25 +1,10 @@
-import {
-  Drawer,
-  DrawerBody,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerOverlay,
-  DrawerContent,
-  DrawerCloseButton,
-  Button,
-  useDisclosure,
-  Box,
-  Flex,
-} from "@chakra-ui/react";
+import { Box, Flex, useDisclosure } from "@chakra-ui/react";
 import React, { useRef } from "react";
-import { FiPlus } from "react-icons/fi";
 import CardContainer from "../../components/container/CardContainer";
-import TableCs from "../../components/dashboard/TableCs";
 import TableSurvei from "../../components/dashboard/TableSurvei";
 import ChartPertumbuhan from "../../components/layout/dashboard/ChartPertumbuhan";
 import ChartProporsi from "../../components/layout/dashboard/ChartProporsi";
 import SideMenu from "../../components/layout/dashboard/SideMenu";
-import TambahCs from "../../components/layout/dashboard/TambahCs";
 
 const Admin = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();

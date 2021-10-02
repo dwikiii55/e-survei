@@ -1,22 +1,20 @@
+import {
+  Box,
+  Button,
+  Drawer,
+  DrawerBody,
+  DrawerCloseButton,
+  DrawerContent,
+  DrawerHeader,
+  DrawerOverlay,
+  useDisclosure,
+} from "@chakra-ui/react";
 import React, { useRef } from "react";
+import { FiPlus, FiUser } from "react-icons/fi";
 import CardContainer from "../../../components/container/CardContainer";
 import TableCs from "../../../components/dashboard/TableCs";
 import SideMenu from "../../../components/layout/dashboard/SideMenu";
-import {
-  Drawer,
-  DrawerBody,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerOverlay,
-  DrawerContent,
-  DrawerCloseButton,
-  Button,
-  useDisclosure,
-  Box,
-  Flex,
-} from "@chakra-ui/react";
 import TambahCs from "../../../components/layout/dashboard/TambahCs";
-import { FiPlus, FiUser } from "react-icons/fi";
 import TitleDasboardPage from "../../../components/ui/TitleDasboardPage";
 
 const CustomerService = () => {

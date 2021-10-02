@@ -40,7 +40,7 @@ const LinkItems = [
   { name: "Customer Service", icon: FiUser, path: "/admin/customer-service" },
   // { name: "Explore", icon: FiCompass },
   // { name: "Favourites", icon: FiStar },
-  // { name: "Settings", icon: FiSettings },
+  { name: "Settings", icon: FiSettings, path: "/admin/pengaturan" },
 ];
 
 export default function SideMenu({ children }) {
@@ -113,7 +113,7 @@ const NavItem = ({ icon, children, path, ...rest }) => {
         role="group"
         cursor="pointer"
         _hover={{
-          bg: "cyan.400",
+          bg: "#9BA4B4",
           color: "white",
         }}
         {...rest}

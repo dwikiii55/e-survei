@@ -8,9 +8,19 @@ import {
   IconButton,
   Tooltip,
   HStack,
+  ButtonGroup,
+  Button,
+  Box,
+  Input,
 } from "@chakra-ui/react";
 import React from "react";
-import { FiEdit, FiEye, FiTrash } from "react-icons/fi";
+import {
+  FiChevronLeft,
+  FiChevronRight,
+  FiEdit,
+  FiEye,
+  FiTrash,
+} from "react-icons/fi";
 
 const Cs = [
   {
@@ -80,6 +90,9 @@ const AksiMenu = ({ id }) => {
 const TableSurvei = () => {
   return (
     <>
+      <Input maxWidth="500px" />
+      <Box m={5} />
+
       <Table>
         <Thead>
           <Tr>
@@ -107,6 +120,12 @@ const TableSurvei = () => {
           })}
         </Tbody>
       </Table>
+      <Box m={5} />
+      <ButtonGroup variant="outline">
+        <IconButton icon={<FiChevronLeft />} />
+        <Button>Halaman : 1</Button>
+        <IconButton icon={<FiChevronRight />} />
+      </ButtonGroup>
     </>
   );
 };
