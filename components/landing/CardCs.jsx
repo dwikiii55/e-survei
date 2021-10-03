@@ -1,7 +1,15 @@
-import { Avatar } from "@chakra-ui/avatar";
+import { Avatar, AvatarBadge, AvatarGroup } from "@chakra-ui/avatar";
 import { useColorModeValue } from "@chakra-ui/color-mode";
 import { Image } from "@chakra-ui/image";
-import { Box, Center, Divider, Flex, Text, WrapItem } from "@chakra-ui/layout";
+import {
+  Box,
+  Center,
+  Divider,
+  Flex,
+  Text,
+  Wrap,
+  WrapItem,
+} from "@chakra-ui/layout";
 import React from "react";
 const dataDummy = [
   { nama: "alfian ", jenis: " TPT" },
@@ -27,14 +35,15 @@ const CardCs = () => {
               flexDir={{ base: "row", sm: "row", md: "row", lg: "row" }}
             >
               <Flex p={3} pl={7}>
-                <WrapItem>
-                  <Avatar
-                    verticalAlign
-                    size="xl"
-                    name="Christian Nwamba"
-                    src="https://bit.ly/code-beast"
-                  />{" "}
-                </WrapItem>
+                <Wrap>
+                  <WrapItem>
+                    <Avatar
+                      size="xl"
+                      name="Prosper Otemuyiwa"
+                      src="https://bit.ly/ryan-florence"
+                    />
+                  </WrapItem>
+                </Wrap>
               </Flex>
               <Divider
                 height="60px"

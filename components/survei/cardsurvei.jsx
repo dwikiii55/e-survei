@@ -25,7 +25,7 @@ const CardSurvei = () => {
                 verticalAlign
                 size="xl"
                 name="Christian Nwamba"
-                src="https://bit.ly/code-beast"
+                src="https://bit.ly/broken-link"
               />{" "}
             </WrapItem>
           </Flex>
