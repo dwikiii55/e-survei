@@ -8,7 +8,7 @@ const dataDummy = [
 ];
 
 const TidakPuasList = () => {
-  const [isClick, setisClick] = useState(false);
+  // const [isClick, setisClick] = useState(false);
   return (
     <>
       <Heading>Alasan :</Heading>
